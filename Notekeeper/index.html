@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- 
+    - Primary Meta Tags
+   -->
+  <title>Notekeeper - Your Everyday Notes | Effortless Note-Taking</title>
+  <meta title="name" content=" Notekeeper - Your Everyday Notes | Effortless Note-Taking" />
+  <meta
+   title="description"
+   content="Streamline your daily note-taking with Notekeeper. Organize, access, 
+   and enhance productivity with ease. Your go-to platform for managing your everyday notes." />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+  <!-- Them js -->
+  <script src="./src/js/theme.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Matrial Symbol Link -->
+  <link
+   rel="stylesheet"
+   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <!-- Custom Css Link -->
+  <link rel="stylesheet" href="./src/css/style.css" />
+
+  <!-- Custom Js Link -->
+  <script src="./src/js/app.js" type="module"></script>
+ </head>
+ <body>
+  <header class="sidebar" data-sidebar>
+   <div class="wrapper wrapper-1">
+    <a href="/">
+     <img src="./src/images/logo-light.svg" alt="Notekeeper" class="logo-light" />
+     <img src="./src/images/logo-dark.svg" alt="Notekeeper" class="logo-dark" />
+    </a>
+
+    <button class="menu-btn icon_btn large" aria-label="Close menu" data-sidebar_toggler>
+     <span class="material-symbols-rounded" aria-hidden="true" data-tooltip="Close sidebar">close</span>
+     <div class="state_layer"></div>
+    </button>
+   </div>
+
+   <button class="fab" data-note_create_btn>
+    <span class="material-symbols-rounded" aria-hidden="true">add</span>
+    <span class="text text-label-large">New note</span>
+    <div class="state_layer"></div>
+   </button>
+
+   <div class="wrapper wrapper-2">
+    <h2 class="text-title-small">NOTEBOOKS</h2>
+    <button
+     class="icon_btn small"
+     data-tooltip="Create new notebook"
+     aria-label="Create new notebook"
+     data-add_notebook>
+     <span class="material-symbols-rounded" aria-hidden="true">add</span>
+
+     <div class="state_layer"></div>
+    </button>
+   </div>
+
+   <nav class="nav custom_scrollbar" data-sidebar_list>
+    <!-- <div class="nav_item active">
+     <span class="text text-label-large" data-notebook_field>My Notebook</span>
+     <button class="icon_btn small" aria-label="edit notebook" data-tooltip="edit notebook" data-edit_btn>
+      <span class="material-symbols-rounded" aria-hidden="true">edit</span>
+
+      <div class="state_layer"></div>
+     </button>
+
+     <button class="icon_btn small" aria-label="Delete notebook" data-tooltip="Delete notebook" data-delete_btn>
+      <span class="material-symbols-rounded" aria-hidden="true">delete</span>
+
+      <div class="state_layer"></div>
+     </button>
+
+     <div class="state_layer"></div>
+    </div> -->
+   </nav>
+
+   <div class="cp_info">
+    <span class="text-label-large">Created by <strong>codewith sadee</strong></span>
+   </div>
+  </header>
+
+  <div class="overlay" data-sidebar_overlay data-sidebar_toggler></div>
+
+  <main class="main">
+   <div class="header">
+    <div class="wrapper">
+     <p class="title text-title-large" data-greeting></p>
+     <span class="text text-body-medium" data-current_data>Sat, Sep 22 2023</span>
+    </div>
+
+    <button class="them_btn icon_btn large" aria-label="Toggle theme" data-tooltip="Toggle theme" data-theme_btn>
+     <span class="material-symbols-rounded dark-icon" aria-hidden="true">dark_mode</span>
+     <span class="material-symbols-rounded light-icon" aria-hidden="true">light_mode</span>
+
+     <div class="state_layer"></div>
+    </button>
+
+    <button class="menu_btn icon_btn large" aria-label="Open menu" data-tooltip="Open menu" data-sidebar_toggler>
+     <span class="material-symbols-rounded" aria-hidden="true">menu</span>
+     <div class="state_layer"></div>
+    </button>
+   </div>
+
+   <h2 class="title text-title-medium" data-note_panel_title>My Notebook</h2>
+
+   <!-- 
+    - NOTE LIST
+    -->
+   <div class="note_list" data-note_panel>
+    <!-- <div class="card">
+     <h3 class="card-title text-title-medium">Note title</h3>
+
+     <p class="card-text text-body-large">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ad consequuntur laudantium reprehenderit quod!
+      Eligendi exercitationem porro laudantium. Cum expedita repellendus atque recusandae. Doloribus deleniti nesciunt,
+      iusto nemo quod ex.
+     </p>
+
+     <div class="wrapper">
+      <span class="card-time text-label-large">20 min ago</span>
+
+      <button class="icon_btn large" aria-label="Delete note" data-tooltip="Delete note">
+       <span class="material-symbols-rounded" aria-hidden="true">delete</span>
+       <div class="state_layer"></div>
+      </button>
+     </div>
+
+     <div class="state_layer"></div>
+    </div> -->
+   </div>
+
+   <!-- 
+    - #FAB button for mobile
+  -->
+   <button class="fab" aria-label="New note" data-note_create_btn>
+    <span class="material-symbols-rounded" aria-hidden="true" data-tooltip="Add new note">add</span>
+    <div class="state_layer"></div>
+   </button>
+
+   <!-- <div class="modal">
+    <button class="icon_btn large" aria-label="Close modal">
+     <span class="material-symbols-rounded" aria-hidden="true">close</span>
+     <div class="state_layer"></div>
+    </button>
+
+    <input
+     type="text"
+     placeholder="Untitled"
+     value="Untitled"
+     class="text modal-title text-title-medium"
+     data-note_field />
+
+    <textarea placeholder="Take a note..." class="modal-text text-body-large custom_scrollbar" data-note_field>
+Take a note...</textarea
+    >
+
+    <div class="modal_footer">
+     <span class="time text-label-large">20 min ago</span>
+
+     <button class="btn fill" data-submit_btn>
+      <span class="text-label-large">Save</span>
+      <div class="state_layer"></div>
+     </button>
+    </div>
+   </div> -->
+
+   <!-- <div class="overlay modal_overlay" data-modal_overlay></div>
+
+   <div class="modal">
+    <h3 class="modal-title text-title-medium">Are you sure you want to delete <strong>"Note title"</strong>?</h3>
+
+    <div class="modal_footer">
+     <button class="btn text">
+      <span class="text-label-large">Cancel</span>
+      <div class="state_layer"></div>
+     </button>
+     <button class="btn fill">
+      <span class="text-label-large">Delete</span>
+      <div class="state_layer"></div>
+     </button>
+    </div>
+   </div> -->
+
+   <!-- <span class="tooltip text-body-small">Tooltip text</span> -->
+
+   <!-- <div class="empty_notes">
+    <span class="material-symbols-rounded" aria-hidden="true">note_stack</span>
+    <div class="text-headline-small">No notes</div>
+   </div> -->
+  </main>
+ </body>
+</html>
